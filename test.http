@@ -1,0 +1,16 @@
+### Test 1 : Créer une réservation (Client)
+POST http://localhost:3000/api/reservations/create
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "tripId": 1
+}
+
+### Test 2 : Valider un billet (Chauffeur)
+POST http://localhost:3000/api/reservations/validate-ticket
+Content-Type: application/json
+
+{
+  "reservationId": 1
+}
